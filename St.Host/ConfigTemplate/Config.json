@@ -1,0 +1,52 @@
+﻿{
+  "RunEnvironment": 0,
+  "UserCenterAddress": "http://s1.iica.cn",
+  "RtServerAddress": "http://rt.iica.cn",
+  "ServerVersionInfo": "http://s1.iica.cn/upgrade/version.json",
+  "DeviceNo": "",
+  "DeviceKey": "",   
+  "AccountAutoLogin": {
+    "IsAutoLogin": false,
+    "UserName": "device1",
+    "Password": "000000"
+  },
+  "MainCamera": {
+    "Type": "主摄像头",
+    "Name": "空",
+    "Resolution": "1280*720",
+    "CodeRate": "500"
+  },
+  "SecondaryCamera": {
+    "Type": "辅摄像头",
+    "Name": "空",
+    "Resolution": "640*480",
+    "CodeRate": "500"
+  },
+  "AudioConfig": {
+    "MainMicrophone": "麦克风 (Realtek High Definition Au",
+    "SecondaryMicrophone": "麦克风 (USB Microphone)",
+    "Speaker": "扬声器/听筒 (Realtek High Definition",
+    "SampleRate": "16000",
+    "CodeRate": "64000"
+  },
+  "LocalLiveConfig": {
+    "Description": "本地推流",
+    "Resolution": "640*360",
+    "CodeRate": "500",
+    "PushLiveStreamUrl": null,
+    "IsEnabled": true
+  },
+  "RemoteLiveConfig": {
+    "Description": "服务器推流",
+    "Resolution": "640*360",
+    "CodeRate": "500",
+    "PushLiveStreamUrl": null,
+    "IsEnabled": true
+  },
+  "RecordConfig": {
+    "Description": "录制",
+    "Resolution": "640*360",
+    "CodeRate": "500",
+    "RecordPath": null
+  }
+}

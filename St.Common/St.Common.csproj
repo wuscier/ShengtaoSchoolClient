@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{303508AF-7F6F-48A5-96E3-253312ED7D9A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>St.Common</RootNamespace>
+    <AssemblyName>St.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=4.4.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.4.0\lib\net45\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DeltaCompressionDotNet, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1d14d6e5194e7f4a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DeltaCompressionDotNet.1.0.0\lib\net45\DeltaCompressionDotNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DeltaCompressionDotNet.MsDelta, Version=1.0.0.0, Culture=neutral, PublicKeyToken=46b2138a390abf55, processorArchitecture=MSIL">
+      <HintPath>..\packages\DeltaCompressionDotNet.1.0.0\lib\net45\DeltaCompressionDotNet.MsDelta.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DeltaCompressionDotNet.PatchApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3e8888ee913ed789, processorArchitecture=MSIL">
+      <HintPath>..\packages\DeltaCompressionDotNet.1.0.0\lib\net45\DeltaCompressionDotNet.PatchApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\squirrel.windows.1.5.2\lib\Net45\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=1.4.3.0, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.4.3\lib\net45\MahApps.Metro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.1.3\lib\net45\MaterialDesignColors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=2.3.0.823, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.2.3.0.823\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.9.6.1\lib\net45\Mono.Cecil.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.9.6.1\lib\net45\Mono.Cecil.Mdb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.9.6.1\lib\net45\Mono.Cecil.Pdb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Cecil.0.9.6.1\lib\net45\Mono.Cecil.Rocks.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NuGet.Squirrel, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\squirrel.windows.1.5.2\lib\Net45\NuGet.Squirrel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Prism, Version=6.2.0.0, Culture=neutral, PublicKeyToken=91a96d2a154366d8, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Core.6.2.0\lib\net45\Prism.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Serilog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.2.4.0\lib\net45\Serilog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Serilog.Sinks.File, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.Sinks.File.3.2.0\lib\net45\Serilog.Sinks.File.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Serilog.Sinks.RollingFile, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
+      <HintPath>..\packages\Serilog.Sinks.RollingFile.3.3.0\lib\net45\Serilog.Sinks.RollingFile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Splat, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Splat.1.6.2\lib\Net45\Splat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Squirrel, Version=1.5.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\squirrel.windows.1.5.2\lib\Net45\Squirrel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.4.3\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helper\BaseResult.cs" />
+    <Compile Include="Converter\BoolToStringConverter.cs" />
+    <Compile Include="Helper\SscDialog.xaml.cs">
+      <DependentUpon>SscDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\SscDialogWithoutButton.xaml.cs">
+      <DependentUpon>SscDialogWithoutButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\UpdateConfirmView.xaml.cs">
+      <DependentUpon>UpdateConfirmView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ConfigManager.cs" />
+    <Compile Include="Contract\IRtClientConfiguration.cs" />
+    <Compile Include="Contract\IRtClientService.cs" />
+    <Compile Include="Contract\ISignOutHandler.cs" />
+    <Compile Include="Contract\RtGroupNotifyEventArgs.cs" />
+    <Compile Include="Contract\RtMessageEventArgs.cs" />
+    <Compile Include="Contract\RtSignOutEventArgs.cs" />
+    <Compile Include="Converter\DateToStringConverter.cs" />
+    <Compile Include="Bms\Device.cs" />
+    <Compile Include="Config\EnvironmentConfig.cs" />
+    <Compile Include="Config\EnvironmentItem.cs" />
+    <Compile Include="Helper\DependencyResolver.cs" />
+    <Compile Include="Bms\LessonInfo.cs" />
+    <Compile Include="Bms\School.cs" />
+    <Compile Include="Contract\IMeeting.cs" />
+    <Compile Include="Contract\IPushLive.cs" />
+    <Compile Include="Contract\IGroupManager.cs" />
+    <Compile Include="Contract\IVisualizeShell.cs" />
+    <Compile Include="Contract\IRecord.cs" />
+    <Compile Include="Contract\IReloadRegion.cs" />
+    <Compile Include="Contract\IExitMeeting.cs" />
+    <Compile Include="Converter\LessonTypeToStringConverter.cs" />
+    <Compile Include="Manager\LogManager.cs" />
+    <Compile Include="Converter\OnlineStatusConverter.cs" />
+    <Compile Include="Rt\RtClientConfiguration.cs" />
+    <Compile Include="Rt\RtServerHandler.cs" />
+    <Compile Include="Config\RunEnv.cs" />
+    <Compile Include="Helper\GlobalData.cs" />
+    <Compile Include="Helper\EnumHelper.cs" />
+    <Compile Include="Bms\LessonDetail.cs" />
+    <Compile Include="Bms\LessonType.cs" />
+    <Compile Include="Bms\SchoolGroupType.cs" />
+    <Compile Include="Contract\IBms.cs" />
+    <Compile Include="Contract\ISdk.cs" />
+    <Compile Include="Contract\ITaskCallback.cs" />
+    <Compile Include="Contract\IViewLayout.cs" />
+    <Compile Include="Config\LoginConfig.cs" />
+    <Compile Include="Config\AudioSetting.cs" />
+    <Compile Include="Bms\ResponseResult.cs" />
+    <Compile Include="Helper\ConfirmDialogContent.xaml.cs">
+      <DependentUpon>ConfirmDialogContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Contract\MeetingStruct.cs" />
+    <Compile Include="Config\MeetingSetting.cs" />
+    <Compile Include="Helper\PasswordBoxHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helper\RegionNames.cs" />
+    <Compile Include="Config\RecordConfig.cs" />
+    <Compile Include="Helper\GlobalResources.cs" />
+    <Compile Include="Config\AudioConfig.cs" />
+    <Compile Include="Config\LiveConfig.cs" />
+    <Compile Include="Config\AggregatedConfig.cs" />
+    <Compile Include="Config\VideoConfig.cs" />
+    <Compile Include="Bms\UserInfo.cs" />
+    <Compile Include="Bms\StudyType.cs" />
+    <Compile Include="Converter\StringToRunEnvConverter.cs" />
+    <Compile Include="Converter\StudyTypeToStringConverter.cs" />
+    <Compile Include="Manager\UpdateManager.cs" />
+    <Compile Include="Bms\VersionInfo.cs" />
+    <Compile Include="ViewLayout\ViewArea.cs" />
+    <Compile Include="ViewLayout\UiMessage.cs" />
+    <Compile Include="ViewLayout\ViewFrame.cs" />
+    <Compile Include="ViewLayout\Sharing.cs" />
+    <Compile Include="Helper\Messages.cs" />
+    <Compile Include="Config\VideoSetting.cs" />
+    <Compile Include="ViewLayout\ViewLayout.cs" />
+    <Compile Include="Helper\ViewModelBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Helper\ConfirmDialogContent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Helper\SscDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Helper\SscDialogWithoutButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Helper\UpdateConfirmView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,16 @@
+﻿{
+  "InternalEnvironment": {
+    "Environment": 1,
+    "BmsAddress": "http://172.16.250.206:89",
+    "NpsAddress": "http://172.16.250.204:88/nps_x1",
+    "RtsAddress": "http://172.16.128.229:91",
+    "ServerVersionInfo": "http://172.16.250.206:89/upgrade/version.json" 
+  },
+  "ExternalEnvironment": {
+    "Environment": 0,
+    "BmsAddress": "http://s1.iica.cn",
+    "NpsAddress": "http://xmeeting.butel.com/nps_x1",
+    "RtsAddress": "http://rt.iica.cn",
+    "ServerVersionInfo": "http://s1.iica.cn/upgrade/version.json" 
+  }
+}
